@@ -4,7 +4,7 @@
     <title>Mobile Sidebar</title>
 
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#42047E">
+    <meta name="theme-color" content="#121212">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kaycee Ingram">
     <meta name="description" content="Mobile UI Testing">
@@ -17,8 +17,12 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header id="header">
         <img class="header-logo" src="./assets/Stash-White.png" alt="Stash" />
+        <div class="header-links">
+          <img id="user-likes-btn" src="./assets/heart-regular.svg" alt="Heart Icon" />
+          <img id="user-messages-btn" src="./assets/message-regular.svg" alt="Messages Icon" isTrusted="true" />
+        </div>
       </header>
 
       <nav class="sidebar" id="sidebar">
@@ -52,11 +56,11 @@
       </nav>
 
       <main class="main-content">
-        <div class="main-content-heading">
+        <!-- <div class="main-content-heading">
           <h1>Posts</h1>
-        </div>
+        </div> -->
         <section>
-          <div class="section-inner">
+          <div id="first-section" class="section-inner">
             <div class="section-user">
               <img src="./assets/kwi.jpeg" alt="Profile Photo" />
               <a href="#">kazewaze</a>
@@ -223,5 +227,6 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/buttons.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

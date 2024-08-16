@@ -64,6 +64,7 @@ body {
 }
 
 .main-content {
+  margin: 70px 0 0 0;
   padding: 0;
 }
 
@@ -102,7 +103,7 @@ section {
 .section-user > a {
   font-size: 25px;
   font-weight: 500;
-  color: var(--purple-brighter);
+  color: var(--user-tag-purple);
 }
 
 .section-info {
@@ -189,12 +190,16 @@ section {
 
 .bookmark-btn-container {} */
 
+#user-likes-btn,
 .bookmark-btn-container > img,
 .control-btn-container > img {
-  /* height: fit-content;
-  width: fit-content; */
   height: 30px;
   width: 30px;
+}
+
+#user-messages-btn {
+  height: 27.5px;
+  width: 27.5px;
 }
 
 @media screen and (max-width: 450px) {
@@ -224,8 +229,14 @@ section {
   color: var(--purple-brighter);
 }
 
+/* #first-section {
+  padding-top: 10px;
+  color: #FFFFFF;
+  background-color: #121212;
+} */
+
 #last-section {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   color: #FFFFFF;
   background-color: #121212;
 }
@@ -233,21 +244,42 @@ section {
 header {
   height: 70px;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
+  transition-property: all;
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
   color: #FFFFFF;
-  background-color: #7308df;
+  background-color: #1c1e21;
+  color: #7308df;
+}
+
+header.hidden {
+  top: -70px;
 }
 
 .header-logo {
   height: 30px;
   width: 100px;
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 0;
+}
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-links > img {
+  margin: 0 20px 0 0;
 }
 
 footer {
