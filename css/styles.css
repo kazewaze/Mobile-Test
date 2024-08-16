@@ -122,7 +122,7 @@ section {
 
 .section-info > h1 {
   margin: 0;
-  padding: 1.34em 0 1.34em 10px;
+  padding: 1.34em 0.67em;
   font-size: 20px;
   font-weight: 500;
 }
