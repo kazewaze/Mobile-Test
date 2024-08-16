@@ -1,8 +1,8 @@
 .sidebar {
   position: fixed;
   top: 0;
-  right: -65px;
-  width: 65px;
+  right: -70px;
+  width: 70px;
   height: 100%;
   margin: 0;
   padding: 2.5px;
@@ -69,7 +69,14 @@
   }
 }
 
-/* .sidebar__links-link {} */
+.sidebar__links-link {
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar__links-link-pic {
+  padding: 3.75px;
+}
 
 .sidebar__links-link__icon {
   height: 50px;
@@ -83,6 +90,21 @@
   border-right: 2px solid #320360;
   border-radius: 7.75px;
   background-color: #42047e;
+}
+
+.sidebar__links-link__icon-pic {
+  height: fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0;
+  /* padding: 3.75px; */
+  /* border: none; */
+  border-top: 2px solid #320360;
+  border-bottom: 4px solid #320360;
+  border-left: 4px solid #320360;
+  border-right: 2px solid #320360;
+  border-radius: 7.75px;
+  background-color: transparent;
 }
 
 /*

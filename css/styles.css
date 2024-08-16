@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+html {
+  color: #FFFFFF;
+  background-color: #121212;
+}
+
 html,
 body {
   height: 100dvh;
@@ -21,8 +26,8 @@ body {
   text-transform: none;
   text-shadow: none !important;
   font-family: 'Fira Sans', "Inter", "Readex Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #1c1e21;
-  background-color: #f2f4f7;
+  color: #FFFFFF;
+  background-color: #121212;
 }
 
 body {
@@ -45,8 +50,8 @@ body {
   font-style: var(--body-font-style);
   font-variation-settings: var(--body-font-variation);
   isolation: isolate;
-  color: #1c1e21;
-  background-color: #f2f4f7;
+  color: #FFFFFF;
+  background-color: #121212;
 }
 
 .main-content,
@@ -54,8 +59,8 @@ body {
   height: 100%;
   min-height: 100%;
   width: 100%;
-  color: #1c1e21;
-  background-color: #f2f4f7;
+  color: #FFFFFF;
+  background-color: #121212;
 }
 
 .main-content {
@@ -69,14 +74,167 @@ body {
   align-items: center;
   margin: 0;
   padding: 50px;
+  color: #FFFFFF;
+  background-color: #121212;
 }
 
 section {
-  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  color: #FFFFFF;
+  background-color: #121212;
+}
+
+.section-user {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 0;
+  border-top-left-radius: 7.75px;
+  border-top-right-radius: 7.75px;
+  background-color: #1c1e21;
+}
+
+.section-user > img {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  margin-right: 10px;
+  border-top-left-radius: 7.75px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.section-user > a {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--purple-brighter);
+}
+
+.section-info {
+  background-color: #212427;
+}
+
+.section-info > h1 {
+  margin: 0;
+  padding: 1.34em 0 1.34em 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-post-photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-photo {
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0;
+}
+
+.section-inner {
+  width: 430px;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 0 0;
+  border-top: 2px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
+  border-right: 2px solid #000000;
+  border-radius: 7.75px;
+  color: #FFFFFF;
+  background-color: #24272c;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 7.75px;
+  border-bottom-right-radius: 7.75px;
+  background-color: #1c1e21;
+}
+
+.controls-container,
+.section-controls,
+.section-bookmark {
+  border-bottom-left-radius: 7.75px;
+  border-bottom-right-radius: 7.75px;
+}
+
+.section-controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 1.34em 0.67em;
+  background-color: #1c1e21;
+}
+
+.section-bookmark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 1.34em 0.67em;
+  background-color: #1c1e21;
+}
+
+/* .control-btn-container {}
+
+.bookmark-btn-container {} */
+
+.bookmark-btn-container > img,
+.control-btn-container > img {
+  /* height: fit-content;
+  width: fit-content; */
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 430px) {
+  section {
+    padding: 10px 0;
+  }
+
+  .section-inner {
+    border: none;
+    border-radius: 0;
+  }
+
+  .section-user > img,
+  .controls-container,
+  .section-controls,
+  .section-bookmark,
+  .section-user {
+    border-radius: 0;
+  }
+}
+
+.section-inner > p {
+  margin-top: 2.5px;
+}
+
+.section-inner > em > a {
+  color: var(--purple-brighter);
 }
 
 #last-section {
-  margin-bottom: 50px;
+  padding-bottom: 100px;
+  color: #FFFFFF;
+  background-color: #121212;
 }
 
 header {
@@ -89,7 +247,7 @@ header {
   margin: 0;
   padding: 0;
   color: #FFFFFF;
-  background-color: #42047e;
+  background-color: #7308df;
 }
 
 .header-logo {
@@ -106,14 +264,18 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* flex-shrink: 0; */
   margin: 0;
   padding: 0;
   color: #FFFFFF;
-  background-color: #42047e;
+  background-color: #7308df;
 }
 
 .footer-logo {
   height: 50px;
   width: 65px;
+}
+
+header > h1 {
+  font-weight: bolder;
+  color: #FFFFFF;
 }
