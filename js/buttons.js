@@ -21,11 +21,10 @@ const heartNeonPinkSolid = "assets/heart-neon-pink-solid.svg";
 likeButtonOne.addEventListener('click', () => {
   if (likeButtonOne.src.includes(heartRegular)) {
     if (navigator.vibrate) {
-      navigator.vibrate(200); // Vibrates for 200 milliseconds
+      navigator.vibrate(200);
       likeButtonOne.src = heartSolid;
     } else {
       likeButtonOne.src = heartSolid;
-      console.log('Vibration API not supported on this device.');
     }
   } else {
     likeButtonOne.src = heartRegular;
@@ -34,7 +33,12 @@ likeButtonOne.addEventListener('click', () => {
 
 likeButtonTwo.addEventListener('click', () => {
   if (likeButtonTwo.src.includes(heartRegular)) {
-    likeButtonTwo.src = heartRedSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      likeButtonTwo.src = heartSolid;
+    } else {
+      likeButtonTwo.src = heartSolid;
+    }
   } else {
     likeButtonTwo.src = heartRegular;
   }
@@ -42,7 +46,12 @@ likeButtonTwo.addEventListener('click', () => {
 
 likeButtonThree.addEventListener('click', () => {
   if (likeButtonThree.src.includes(heartRegular)) {
-    likeButtonThree.src = heartPinkSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      likeButtonThree.src = heartSolid;
+    } else {
+      likeButtonThree.src = heartSolid;
+    }
   } else {
     likeButtonThree.src = heartRegular;
   }
@@ -50,7 +59,12 @@ likeButtonThree.addEventListener('click', () => {
 
 likeButtonFour.addEventListener('click', () => {
   if (likeButtonFour.src.includes(heartRegular)) {
-    likeButtonFour.src = heartNeonPinkSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      likeButtonFour.src = heartSolid;
+    } else {
+      likeButtonFour.src = heartSolid;
+    }
   } else {
     likeButtonFour.src = heartRegular;
   }
@@ -58,7 +72,12 @@ likeButtonFour.addEventListener('click', () => {
 
 likeButtonFive.addEventListener('click', () => {
   if (likeButtonFive.src.includes(heartRegular)) {
-    likeButtonFive.src = heartSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      likeButtonFive.src = heartSolid;
+    } else {
+      likeButtonFive.src = heartSolid;
+    }
   } else {
     likeButtonFive.src = heartRegular;
   }
@@ -66,7 +85,12 @@ likeButtonFive.addEventListener('click', () => {
 
 markButtonOne.addEventListener('click', () => {
   if (markButtonOne.src.includes(bookRegular)) {
-    markButtonOne.src = bookSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      markButtonOne.src = bookSolid;
+    } else {
+      markButtonOne.src = bookSolid;
+    }
   } else {
     markButtonOne.src = bookRegular;
   }
@@ -74,7 +98,12 @@ markButtonOne.addEventListener('click', () => {
 
 markButtonTwo.addEventListener('click', () => {
   if (markButtonTwo.src.includes(bookRegular)) {
-    markButtonTwo.src = bookSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      markButtonTwo.src = bookSolid;
+    } else {
+      markButtonTwo.src = bookSolid;
+    }
   } else {
     markButtonTwo.src = bookRegular;
   }
@@ -82,7 +111,12 @@ markButtonTwo.addEventListener('click', () => {
 
 markButtonThree.addEventListener('click', () => {
   if (markButtonThree.src.includes(bookRegular)) {
-    markButtonThree.src = bookSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      markButtonThree.src = bookSolid;
+    } else {
+      markButtonThree.src = bookSolid;
+    }
   } else {
     markButtonThree.src = bookRegular;
   }
@@ -90,7 +124,12 @@ markButtonThree.addEventListener('click', () => {
 
 markButtonFour.addEventListener('click', () => {
   if (markButtonFour.src.includes(bookRegular)) {
-    markButtonFour.src = bookSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      markButtonFour.src = bookSolid;
+    } else {
+      markButtonFour.src = bookSolid;
+    }
   } else {
     markButtonFour.src = bookRegular;
   }
@@ -98,7 +137,12 @@ markButtonFour.addEventListener('click', () => {
 
 markButtonFive.addEventListener('click', () => {
   if (markButtonFive.src.includes(bookRegular)) {
-    markButtonFive.src = bookSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+      markButtonFive.src = bookSolid;
+    } else {
+      markButtonFive.src = bookSolid;
+    }
   } else {
     markButtonFive.src = bookRegular;
   }
