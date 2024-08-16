@@ -20,7 +20,13 @@ const heartNeonPinkSolid = "assets/heart-neon-pink-solid.svg";
 
 likeButtonOne.addEventListener('click', () => {
   if (likeButtonOne.src.includes(heartRegular)) {
-    likeButtonOne.src = heartSolid;
+    if (navigator.vibrate) {
+      navigator.vibrate(200); // Vibrates for 200 milliseconds
+      likeButtonOne.src = heartSolid;
+    } else {
+      likeButtonOne.src = heartSolid;
+      console.log('Vibration API not supported on this device.');
+    }
   } else {
     likeButtonOne.src = heartRegular;
   }
