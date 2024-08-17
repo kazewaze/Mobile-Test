@@ -99,14 +99,6 @@ body {
     "HEXP" 0;
   color: var(--fb-black);
   background-color: var(--fb-white-background);
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-image: none;
-  background-size: auto;
-  background-origin: padding-box;
-  background-clip: border-box;
 }
 
 a {
